@@ -1,0 +1,144 @@
+/* General styles */
+body {
+  font-family: 'Comfortaa', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Header styles */
+h1 {
+  color: #bb86fc;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.5em;
+}
+
+h2 {
+  text-align: center;
+  color: #e0e0e0;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* Image styles */
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Table styles */
+table {
+  width: 60%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #2f3542;
+  color: #d2dae2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #d2dae2;
+}
+
+th {
+  background-color: #bc88fc;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #57606f;
+}
+
+/* List styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 50%;
+  margin: 20px auto;
+}
+
+li {
+  background-color: #bc88fc;
+  margin: 5px 0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  transition: transform 0.2s, color 0.2s;
+}
+
+li:hover {
+  transform: scale(1.1);
+  color: #333;
+}
+
+/* Form styles */
+form {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="file"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+form input[type="text"]:focus,
+form input[type="file"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #bb86fc;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #bb86fc;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #3700b3;
+  transform: scale(1.05);
+}
+
+/* Requirements text styles */
+p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #e0e0e0;
+  margin-top: 20px;
+}
