@@ -3,67 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <title>Siddarth's Portfolio</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Be my girlfriend!</h1>
-    <h2>Why me!</h2>
-    <img
-      src="Self Portrait.png"
-      alt="Self Portrait"
-      width="30%"
-      height="30%"
-    />
-    <div>
-      <table>
-        <tr>
-          <th>Siddarth</th>
-          <th>16</th>
-          <th>Male</th>
-          <th>Brown</th>
-        </tr>
-      </table>
-      <p>Requirements:</p>
+    <header>
+      <img src="profile-picture.png" alt="Profile Picture" />
+      <h1>SRINIVASAN SHIV SIDDARTH</h1>
+      <h2>H2 Computing Student</h2>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hey! I’m a JC1 student passionate about computer science and how
+        technology shapes the world. I took H2 Computing because I love
+        problem-solving and want to build cool projects that make an impact.
+        Coding, algorithms, and logical thinking excite me, and I’m always
+        looking to improve my skills.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
       <ul>
-        <li>Short</li>
-        <li>Funny</li>
+        <h3>Primary School</h3>
+        <li>Woodgrove Primary School (2014-2020)</li>
+        <li>CCA: Badminton, Captain</li>
+        <li>Achievement: Won Edusave award 2020</li>
+
+        <h3>Secondary School</h3>
+        <li>Yishun Town Secondary School (2021-2024)</li>
+        <li>CCA: Infocomm Club, Game-Development Division Head</li>
+        <li>
+          Achievement: Represented school in multiple competitions including
+          Codequest, Drone Odyssey, IDE Hacker, IDE Sumo, Siebersecc CTF
+          Cybersecurity
+        </li>
+
+        <h3>Junior College</h3>
+        <li>Anderson Serangoon Junior College (2025-Present)</li>
+        <li>CCA: Ultimate Frisbee</li>
+        <li>Achievement: Participated in Whitehat CTF 2025</li>
       </ul>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" /><br />
-        <label for="age">Age:</label>
-        <input type="text" id="age" name="age" /><br />
-        <label for="photo">Photo:</label>
-        <input type="file" id="photo" name="photo" accept="image/*" /><br />
-        <img
-          id="preview"
-          src="#"
-          alt="Image Preview"
-          style="display: none; width: 30%; height: 30%"
-        /><br />
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
-    <script>
-      document
-        .getElementById("photo")
-        .addEventListener("change", function (event) {
-          const file = event.target.files[0];
-          if (file) {
-            const reader = new FileReader();
-            reader.onload = function (e) {
-              const preview = document.getElementById("preview");
-              preview.src = e.target.result;
-              preview.style.display = "block";
-            };
-            reader.readAsDataURL(file);
-          }
-        });
-    </script>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming: Python, HTML, CSS</li>
+        <li>Problem Solving</li>
+        <li>Team Collaboration</li>
+        <li>Public Speaking</li>
+      </ul>
+    </section>
+
+    <section id="activity">
+      <h2>Activity</h2>
+      <p>
+        I took H2 Computing because I’ve always been interested in technology
+        and how things work behind the scenes. Coding and problem-solving seem
+        like useful skills, not just for future careers but also for everyday
+        life. I’m hoping to get better at logical thinking, build cool projects,
+        and maybe even create something that solves real-world problems. Plus,
+        with technology evolving so fast, understanding computing feels like a
+        solid way to stay ahead and keep my options open for the future!
+      </p>
+    </section>
   </body>
 </html>
